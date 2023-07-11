@@ -575,3 +575,41 @@ h3.home-title:before {
   height: 730px;
   border-radius: 38px;
 }
+.govahiname {
+  position: relative;
+}
+.govahiname-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--gradient-light);
+  height: 200px;
+  width: 100%;
+}
+.govahiname .each-govahiname {
+  height: 465px;
+  background: #d9d9d9;
+  border-radius: 38px;
+  overflow: hidden;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
