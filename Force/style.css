@@ -285,7 +285,7 @@ a {
 }
 
 body {
-  background: var(--gray-200);
+  /* background: var(--gray-200); */
   /* background: var(--gradient-light); */
   font-family: KalamehWebFaNum;
   max-width: 1360px;
@@ -300,6 +300,9 @@ body {
 .container-content {
   width: 1164px;
   margin: 0 auto;
+}
+section {
+  padding: 50px 0;
 }
 .top-header {
   background: var(--gradient-glassmorphic);
@@ -407,26 +410,26 @@ body {
 
 .kasbokar-home {
   background: #fff;
-  padding: 35px;
+  padding-top: 100px;
 }
-.kasbokar-home h3 {
+h3.home-title {
   color: var(--black-500);
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 37px;
   letter-spacing: -0.35px;
-  margin-bottom: 40px;
+  padding: 0 0 54px 0;
   position: relative;
 }
 
-.kasbokar-home h3:before {
+h3.home-title:before {
   content: " ";
   display: block;
   height: 9px;
   width: 76px;
   position: absolute;
-  top: 40%;
+  top: 18%;
   right: -98px;
   background: var(--orange-500);
   border-top-left-radius: 5px;
@@ -437,6 +440,7 @@ body {
   width: 100%;
   height: 108px;
   border-radius: 32px;
+  box-shadow: var(--shadow-2xl);
 }
 .kasbokar-circles {
   display: flex;
@@ -453,6 +457,7 @@ body {
   height: 166px;
   border-radius: 50%;
   background: var(--orange-500);
+  box-shadow: var(--shadow-xl);
 }
 .kasbokar-circle .circle:hover {
   background: var(--gradient-light);
@@ -464,4 +469,109 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 37px;
+}
+
+.comments-home {
+  background: #f6ac8b54;
+}
+
+.comments-rect {
+  width: 1164px;
+  /* height: 215px; */
+  background: var(--gradient-glassmorphic);
+  border-radius: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.comments-home .partner-brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.partner-brands h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.35px;
+  /* padding: 10px 0; */
+}
+.comments-home .partner-logos {
+  width: 95%;
+  height: 150px;
+}
+.comment-box {
+  padding: 46px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 28px;
+}
+.comment-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-2xl);
+}
+.comment-box .ceo-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: solid 3px var(--orange-400);
+  gap: 10px;
+  padding-right: 20px;
+}
+.comment-box .ceo-comment h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+}
+.comment-box .ceo-comment p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px;
+}
+
+.about-us {
+  background: url(img/bg\ about\ us.png);
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  /* flex-direction: row-reverse; */
+}
+
+.about-us-content .right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about-us-content .right p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px;
+}
+.about-us-content .right .buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.about-us-content img {
+  width: 550px;
+  height: 730px;
+  border-radius: 38px;
 }
