@@ -147,6 +147,11 @@ a {
     #fff 0%,
     rgba(255, 255, 255, 0.4) 100%
   );
+  --gradient-glassmorphic-orange: linear-gradient(
+    235deg,
+    #fe590fad 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
 
   /* Color pallete:  */
   --orange-50: #ffeee7;
@@ -288,7 +293,7 @@ body {
   /* background: var(--gray-200); */
   /* background: var(--gradient-light); */
   font-family: KalamehWebFaNum;
-  max-width: 1360px;
+  /* max-width: 1360px; */
   margin: 0 auto;
   direction: rtl;
 }
@@ -305,15 +310,12 @@ section {
   padding: 50px 0;
 }
 .top-header {
-  background: var(--gradient-glassmorphic);
-  backdrop-filter: blur(2px);
+  background: var(--gradient-glassmorphic-orange);
+  backdrop-filter: blur(9px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 36px;
-  position: fixed;
-  z-index: 10;
-  width: 1360px;
+  padding: 5px 30px;
 }
 .logo {
   width: 134px;
@@ -323,6 +325,10 @@ section {
   display: flex;
   gap: 8px;
 }
+.mobile-menu-icon {
+  display: none;
+}
+
 .btn-orange {
   text-align: center;
   font-size: 20px;
@@ -337,6 +343,17 @@ section {
   color: #fff;
   background: var(--orange-500);
   border-radius: 11px;
+}
+.btn-white {
+  color: var(--orange-500);
+  display: flex;
+  height: 46px;
+  padding: 8px 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 11px;
+  border: 2px solid var(--solid-primary-primary-500, #fe590f);
 }
 .btn-orange:hover {
   background: var(--gradient-light);
@@ -374,6 +391,25 @@ section {
   height: 60vh;
   object-fit: cover;
 }
+.hero h1 {
+  position: absolute;
+  color: #fff;
+  text-align: right;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  bottom: 50%;
+  right: 98px;
+}
+.hero h1 > span {
+  margin-top: 30px;
+  display: block;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
 .hero .hero-info {
   position: absolute;
   display: flex;
@@ -410,7 +446,6 @@ section {
 
 .kasbokar-home {
   background: #fff;
-  padding-top: 100px;
 }
 h3.home-title {
   color: var(--black-500);
@@ -429,7 +464,7 @@ h3.home-title:before {
   height: 9px;
   width: 76px;
   position: absolute;
-  top: 18%;
+  top: 13%;
   right: -98px;
   background: var(--orange-500);
   border-top-left-radius: 5px;
@@ -438,7 +473,7 @@ h3.home-title:before {
 .kasbokar-rect {
   background: var(--gradient-dark);
   width: 100%;
-  height: 108px;
+  height: 70px;
   border-radius: 32px;
   box-shadow: var(--shadow-2xl);
 }
@@ -447,14 +482,15 @@ h3.home-title:before {
   justify-content: space-around;
 }
 .kasbokar-circle {
-  width: 185px;
+  width: 155px;
   display: flex;
   flex-direction: column;
-  margin-top: -138px;
+  align-items: center;
+  margin-top: -103px;
 }
 .kasbokar-circle .circle {
-  width: 166px;
-  height: 166px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background: var(--orange-500);
   box-shadow: var(--shadow-xl);
@@ -463,12 +499,12 @@ h3.home-title:before {
   background: var(--gradient-light);
 }
 .kasbokar-circle span {
-  padding-top: 37px;
+  padding-top: 15px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 37px;
+  line-height: 25px;
 }
 
 .comments-home {
@@ -476,16 +512,14 @@ h3.home-title:before {
 }
 
 .comments-rect {
-  width: 1164px;
-  /* height: 215px; */
-  background: var(--gradient-glassmorphic);
+  /* background: var(--gradient-glassmorphic); */
   border-radius: 27px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 .comments-home .partner-brands {
   display: flex;
@@ -495,46 +529,53 @@ h3.home-title:before {
   gap: 20px;
 }
 
+.comments-home .group-logos {
+  background: transparent;
+}
 .partner-brands h2 {
-  font-size: 24px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 700;
   line-height: 37px;
   letter-spacing: -0.35px;
-  /* padding: 10px 0; */
+  padding: 20px 0;
 }
 .comments-home .partner-logos {
   width: 95%;
-  height: 150px;
+  /* height: 150px; */
+  margin: 0 auto;
 }
 .comment-box {
-  padding: 46px 0;
+  padding: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 28px;
 }
-.comment-box img {
-  width: 150px;
-  height: 150px;
+.comment-box img.ceo-comment-logo {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   box-shadow: var(--shadow-2xl);
 }
 .comment-box .ceo-comment {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-right: solid 3px var(--orange-400);
   gap: 10px;
   padding-right: 20px;
 }
 .comment-box .ceo-comment h3 {
+  /* text-align: right; */
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 37px;
 }
 .comment-box .ceo-comment p {
+  text-align: right;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -587,12 +628,107 @@ h3.home-title:before {
   height: 200px;
   width: 100%;
 }
-.govahiname .each-govahiname {
+.govahiname .each-govahiname,
+.maghalat .each-govahiname {
   height: 465px;
   background: #d9d9d9;
   border-radius: 38px;
   overflow: hidden;
 }
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.maghalat .each-maghale {
+  width: auto;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-start;
+}
+.maghalat .each-maghale img {
+  border-top: solid 16px var(--orange-500);
+  margin-bottom: 20px;
+}
+.each-maghale h3,
+.each-akhbar h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+.maghalat p,
+.akhbar p {
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.each-maghale a,
+.each-akhbar a {
+  align-self: flex-end;
+}
+.akhbar .each-akhbar {
+  width: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-start;
+}
+.each-akhbar img {
+  height: 450px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: var(--black-500);
+  padding: 40px 0;
+}
+footer .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+footer .footer-right,
+footer .footer-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 1;
+  gap: 30px;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer h3 > a {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+}
+footer a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+footer a:hover {
+  color: var(--orange-500);
+}
+
+/* swiper slider  */
 .swiper {
   width: 100%;
   height: 100%;
@@ -612,4 +748,172 @@ h3.home-title:before {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* media queries
+/
+/
+/ */
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 600px) {
+  .top-header {
+    background: var(--orange-500);
+    width: 100%;
+    padding: 5px 10px;
+    height: 70px;
+  }
+  .top-menu {
+    display: none;
+  }
+  .top-header .bio-language {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: flex;
+    color: #000;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    right: 30px;
+  }
+  .hero h1 > span {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .hero .hero-info {
+    width: 95%;
+    padding: 20px;
+    gap: 5px;
+  }
+  .hero .hero-info p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .hero .hero-info p span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  section {
+    padding: 20px 0;
+  }
+  .container-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h3.home-title {
+    font-size: 24px;
+    padding-right: 90px;
+  }
+  h3.home-title:before {
+    right: 0;
+  }
+  .kasbokar-rect {
+    height: 34px;
+  }
+  .kasbokar-circle {
+    width: 64px;
+    margin-top: -50px;
+  }
+  .kasbokar-circle .circle {
+    width: 64px;
+    height: 64px;
+  }
+  .kasbokar-circle span {
+    padding-top: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .partner-brands h2 {
+    font-size: 24px;
+  }
+  .comment-box {
+    padding: 30px 10px;
+    gap: 15px;
+  }
+  .comment-box img.ceo-comment-logo {
+    width: 68px;
+    height: 68px;
+  }
+  .comment-box .ceo-comment h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .comment-box .ceo-comment p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .about-us-content .right p {
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .about-us-content .right .buttons .btn-orange {
+    font-size: 20px;
+  }
+  .about-us-content .right .buttons {
+    justify-content: space-between;
+  }
+  .about-us-content img {
+    display: none;
+  }
+  .govahiname {
+    padding-bottom: 50px;
+  }
+  .govahiname-bg {
+    height: 100px;
+  }
+  .govahiname .each-govahiname,
+  .maghalat .each-govahiname {
+    height: 200px;
+    border-radius: 18px;
+  }
+
+  footer .footer-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .footer-nav {
+    gap: 1px;
+  }
+  footer h3 > a {
+    font-size: 16px;
+  }
+  footer a {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  //
+  //
+  //
+}
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media only screen and (min-width: 500px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
