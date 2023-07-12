@@ -433,6 +433,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -792,7 +793,14 @@ footer a:hover {
 ///////////////////////////////
 ///////////////////////////////
 ///////////////////////////////*/
-
+@media only screen and (max-width: 400px) {
+  .hero .hero-info p {
+    font-size: 14px;
+  }
+  .hero .hero-info p span {
+    font-size: 12px;
+  }
+}
 /* Mobile and Tablet Devices */
 @media only screen and (max-width: 720px) {
   .container-content {
@@ -833,13 +841,13 @@ footer a:hover {
     gap: 5px;
   }
   .hero .hero-info p {
-    font-size: 28px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .hero .hero-info p span {
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
@@ -852,8 +860,9 @@ footer a:hover {
     margin: 0 auto;
   }
   h3.home-title {
-    font-size: 24px;
+    font-size: 22px;
     padding: 0 90px 30px 0;
+    right: -25px;
   }
   h3.home-title:before {
     right: 0;
@@ -868,15 +877,15 @@ footer a:hover {
   }
   .kasbokar-circle {
     width: 100px;
-    margin-top: -58px;
+    margin-top: -50px;
   }
   .kasbokar-circle .circle {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
   }
   .kasbokar-circle span {
     padding-top: 10px;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 18px;
@@ -893,11 +902,11 @@ footer a:hover {
     height: 68px;
   }
   .group-logos .logo-box {
-    padding: 20px;
+    padding: 10px;
   }
   .group-logos .logo-box .each-logo {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .comment-box .ceo-comment h3 {
     font-size: 16px;
