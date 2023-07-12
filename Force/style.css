@@ -303,7 +303,7 @@ body {
   margin: 0 auto;
 }
 .container-content {
-  width: 1164px;
+  width: 90%;
   margin: 0 auto;
 }
 section {
@@ -319,7 +319,6 @@ section {
 }
 .logo {
   width: 134px;
-  height: 55px;
 }
 .top-menu {
   display: flex;
@@ -331,12 +330,12 @@ section {
 
 .btn-orange {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
   display: flex;
-  padding: 8px 22px;
+  padding: 8px 15px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -411,6 +410,7 @@ section {
   line-height: 30px;
 }
 .hero .hero-info {
+  width: 80%;
   position: absolute;
   display: flex;
   flex-direction: row-reverse;
@@ -418,7 +418,7 @@ section {
   direction: ltr;
   padding: 20px 61px;
   align-items: center;
-  gap: 90px;
+  /* gap: 90px; */
   border-radius: 17px;
   backdrop-filter: blur(5px);
   background: var(--gradient-glassmorphic);
@@ -456,6 +456,7 @@ h3.home-title {
   letter-spacing: -0.35px;
   padding: 0 0 54px 0;
   position: relative;
+  right: 29px;
 }
 
 h3.home-title:before {
@@ -480,9 +481,9 @@ h3.home-title:before {
 .kasbokar-circles {
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 .kasbokar-circle {
-  width: 155px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -512,14 +513,12 @@ h3.home-title:before {
 }
 
 .comments-rect {
-  /* background: var(--gradient-glassmorphic); */
   border-radius: 27px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  /* padding: 50px 0; */
 }
 .comments-home .partner-brands {
   display: flex;
@@ -529,8 +528,29 @@ h3.home-title:before {
   gap: 20px;
 }
 
-.comments-home .group-logos {
-  background: transparent;
+.group-logos .logo-box {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 27px;
+  background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.4) 100%);
+  padding: 20px 45px 65px 45px;
+}
+.group-logos .logo-box .each-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 120px;
+  height: 120px;
+  /* background: var(--orange-500); */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow-2xl);
+}
+.group-logos .logo-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 .partner-brands h2 {
   font-size: 38px;
@@ -538,7 +558,7 @@ h3.home-title:before {
   font-weight: 700;
   line-height: 37px;
   letter-spacing: -0.35px;
-  padding: 20px 0;
+  padding-bottom: 10px;
 }
 .comments-home .partner-logos {
   width: 95%;
@@ -568,7 +588,6 @@ h3.home-title:before {
   padding-right: 20px;
 }
 .comment-box .ceo-comment h3 {
-  /* text-align: right; */
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -621,7 +640,7 @@ h3.home-title:before {
 }
 .govahiname-bg {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--gradient-light);
@@ -737,7 +756,7 @@ footer a:hover {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -751,17 +770,17 @@ footer a:hover {
 }
 
 /* media queries
-/
-/
-/ */
+///////////////////////////////
+///////////////////////////////
+///////////////////////////////*/
 
-/* Extra small devices (phones, 500px and down) */
-@media only screen and (max-width: 600px) {
+/* Mobile and Tablet Devices */
+@media only screen and (max-width: 720px) {
+  .container-content {
+    width: 100%;
+  }
   .top-header {
     background: var(--orange-500);
-    width: 100%;
-    padding: 5px 10px;
-    height: 70px;
   }
   .top-menu {
     display: none;
@@ -771,7 +790,14 @@ footer a:hover {
   }
   .mobile-menu-icon {
     display: flex;
-    color: #000;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  .top-menu > a {
+    padding: 3px 5px;
+    font-size: 10px;
   }
 
   .hero h1 {
@@ -788,13 +814,13 @@ footer a:hover {
     gap: 5px;
   }
   .hero .hero-info p {
-    font-size: 20px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .hero .hero-info p span {
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
@@ -808,25 +834,30 @@ footer a:hover {
   }
   h3.home-title {
     font-size: 24px;
-    padding-right: 90px;
+    padding: 0 90px 30px 0;
   }
   h3.home-title:before {
     right: 0;
+    top: 22%;
+  }
+  h3.home-title ~ .btn-orange {
+    padding: 3px 12px;
+    font-size: 14px;
   }
   .kasbokar-rect {
     height: 34px;
   }
   .kasbokar-circle {
-    width: 64px;
-    margin-top: -50px;
+    width: 100px;
+    margin-top: -58px;
   }
   .kasbokar-circle .circle {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
   }
   .kasbokar-circle span {
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 18px;
@@ -841,6 +872,13 @@ footer a:hover {
   .comment-box img.ceo-comment-logo {
     width: 68px;
     height: 68px;
+  }
+  .group-logos .logo-box {
+    padding: 20px;
+  }
+  .group-logos .logo-box .each-logo {
+    width: 50px;
+    height: 50px;
   }
   .comment-box .ceo-comment h3 {
     font-size: 16px;
@@ -857,19 +895,20 @@ footer a:hover {
 
   .about-us-content .right p {
     text-align: justify;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
   }
-  .about-us-content .right .buttons .btn-orange {
-    font-size: 20px;
-  }
+
   .about-us-content .right .buttons {
     justify-content: space-between;
   }
   .about-us-content img {
     display: none;
+  }
+  .about-us .buttons > a {
+    flex-grow: 1;
   }
   .govahiname {
     padding-bottom: 50px;
@@ -882,7 +921,14 @@ footer a:hover {
     height: 200px;
     border-radius: 18px;
   }
-
+  .akhbar .each-akhbar {
+    height: 450px;
+  }
+  .maghalat p,
+  .akhbar p {
+    font-size: 14px;
+    line-height: 22px;
+  }
   footer .footer-menu {
     flex-direction: column;
     gap: 15px;
@@ -897,23 +943,85 @@ footer a:hover {
     font-size: 12px;
     line-height: 22px;
   }
-  //
-  //
-  //
 }
+/* /////////////////////////
+////////////////////////////
+/////////////////////////// */
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
+  .top-header {
+    padding: 5px 10px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .top-menu .btn-orange {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+  .top-header .bio-language a {
+    font-size: 14px;
+  }
+  .hero h1 {
+    right: 50px;
+    bottom: 50%;
+  }
+  .hero .hero-info {
+    width: 90%;
+    padding: 15px 20px;
+  }
+  .hero .hero-info p {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .hero .hero-info p span {
+    font-size: 20px;
+  }
+  .kasbokar-rect {
+    height: 50px;
+  }
 
-/* Small devices (portrait tablets and large phones, 500px and up) */
-@media only screen and (min-width: 500px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+  .kasbokar-circle {
+    margin-top: -77px;
+  }
+  .kasbokar-circle .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .kasbokar-circle span {
+    font-size: 16px;
+  }
+  .partner-brands h2 {
+    font-size: 30px;
+  }
+  .comment-box img.ceo-comment-logo {
+    width: 90px;
+    height: 90px;
+  }
+  .comment-box .ceo-comment h3 {
+    font-size: 24px;
+  }
+  .comment-box .ceo-comment p {
+    font-size: 20px;
+  }
+  .about-us-content {
+    gap: 20px;
+  }
+  .about-us-content .right p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about-us-content img {
+    /* display: none; */
+    width: 250px;
+    height: 430px;
+    border-radius: 38px;
+  }
+  .govahiname-bg {
+    height: 100px;
+  }
+  .govahiname .each-govahiname,
+  .maghalat .each-govahiname {
+    height: 350px;
+  }
 }
