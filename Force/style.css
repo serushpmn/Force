@@ -357,6 +357,11 @@ section {
 .btn-orange:hover {
   background: var(--gradient-light);
 }
+.btn-white:hover {
+  border: 1px solid #fff;
+  background: var(--gradient-light);
+  color: #fff;
+}
 .top-header .bio-language {
   display: flex;
   gap: 5px;
@@ -624,6 +629,7 @@ h3.home-title:before {
   font-style: normal;
   font-weight: 500;
   line-height: 37px;
+  text-align: justify;
 }
 .about-us-content .right .buttons {
   display: flex;
@@ -654,7 +660,13 @@ h3.home-title:before {
   border-radius: 38px;
   overflow: hidden;
 }
-
+.govahiname .each-govahiname a:hover {
+  transform: scale(1.5);
+}
+.govahiname img:hover {
+  transition: all 1000ms ease;
+  transform: scale(1.2);
+}
 .top-section {
   display: flex;
   justify-content: space-between;
@@ -679,8 +691,10 @@ h3.home-title:before {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 20px;
   margin-bottom: 10px;
+  height: 50px;
+  text-align: right;
 }
 .maghalat p,
 .akhbar p {
@@ -688,8 +702,11 @@ h3.home-title:before {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px;
 }
 .each-maghale a,
 .each-akhbar a {
@@ -730,7 +747,8 @@ footer .footer-nav {
   flex-direction: column;
   gap: 10px;
 }
-footer h3 > a {
+footer h3 {
+  color: var(--orange-600);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -742,6 +760,7 @@ footer a {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  text-transform: uppercase;
 }
 footer a:hover {
   color: var(--orange-500);
