@@ -290,10 +290,7 @@ a {
 }
 
 body {
-  /* background: var(--gray-200); */
-  /* background: var(--gradient-light); */
   font-family: KalamehWebFaNum;
-  /* max-width: 1360px; */
   margin: 0 auto;
   direction: rtl;
 }
@@ -330,23 +327,19 @@ section {
 
 .btn-orange {
   text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
   display: flex;
-  padding: 8px 15px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   color: #fff;
+  padding: 10px 20px;
   background: var(--orange-500);
   border-radius: 11px;
 }
 .btn-white {
+  font-size: 16px;
   color: var(--orange-500);
   display: flex;
-  height: 46px;
   padding: 8px 22px;
   justify-content: center;
   align-items: center;
@@ -384,7 +377,7 @@ section {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
 }
 
 .hero .img-slider {
@@ -392,7 +385,7 @@ section {
 }
 .hero .img-slider img {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   object-fit: cover;
 }
 .hero h1 {
@@ -403,8 +396,7 @@ section {
   font-style: normal;
   font-weight: 700;
   line-height: 37px;
-  bottom: 50%;
-  right: 98px;
+  bottom: 60%;
 }
 .hero h1 > span {
   margin-top: 30px;
@@ -421,24 +413,17 @@ section {
   flex-direction: row-reverse;
   justify-content: space-between;
   direction: ltr;
-  padding: 20px 61px;
   align-items: center;
-  /* gap: 90px; */
   border-radius: 17px;
   backdrop-filter: blur(5px);
   background: var(--gradient-glassmorphic);
-  bottom: 50px;
+  bottom: 40px;
 }
 .hero .hero-info p {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: -0.4px;
 }
 .hero .hero-info p span {
   font-size: 30px;
@@ -447,8 +432,6 @@ section {
   line-height: 37px;
   letter-spacing: -0.35px;
 }
-
-/* Kasbo kar:  */
 
 .kasbokar-home {
   background: #fff;
@@ -460,7 +443,7 @@ h3.home-title {
   font-weight: 700;
   line-height: 37px;
   letter-spacing: -0.35px;
-  padding: 0 0 54px 0;
+
   position: relative;
   right: 29px;
 }
@@ -480,7 +463,6 @@ h3.home-title:before {
 .kasbokar-rect {
   background: var(--gradient-dark);
   width: 100%;
-  height: 70px;
   border-radius: 32px;
   box-shadow: var(--shadow-2xl);
 }
@@ -493,11 +475,8 @@ h3.home-title:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -103px;
 }
 .kasbokar-circle .circle {
-  width: 130px;
-  height: 130px;
   border-radius: 50%;
   background: var(--orange-500);
   box-shadow: var(--shadow-xl);
@@ -508,10 +487,6 @@ h3.home-title:before {
 .kasbokar-circle span {
   padding-top: 15px;
   text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 25px;
 }
 
 .comments-home {
@@ -531,7 +506,6 @@ h3.home-title:before {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 
 .group-logos .logo-box {
@@ -546,41 +520,24 @@ h3.home-title:before {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 120px;
-  height: 120px;
-  /* background: var(--orange-500); */
   border-radius: 50%;
   overflow: hidden;
   box-shadow: var(--shadow-2xl);
 }
 .group-logos .logo-box img {
-  width: 100px;
-  height: 100px;
   object-fit: cover;
-}
-.partner-brands h2 {
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 37px;
-  letter-spacing: -0.35px;
-  padding-bottom: 10px;
 }
 .comments-home .partner-logos {
   width: 95%;
-  /* height: 150px; */
   margin: 0 auto;
 }
 .comment-box {
-  padding: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 28px;
 }
 .comment-box img.ceo-comment-logo {
-  width: 120px;
-  height: 120px;
   border-radius: 50%;
   box-shadow: var(--shadow-2xl);
 }
@@ -593,19 +550,6 @@ h3.home-title:before {
   gap: 10px;
   padding-right: 20px;
 }
-.comment-box .ceo-comment h3 {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 37px;
-}
-.comment-box .ceo-comment p {
-  text-align: right;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 37px;
-}
 
 .about-us {
   background: url(img/bg\ about\ us.png);
@@ -616,20 +560,14 @@ h3.home-title:before {
   justify-content: center;
   align-items: center;
   gap: 50px;
-
-  /* flex-direction: row-reverse; */
 }
 
 .about-us-content .right {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 15px;
 }
 .about-us-content .right p {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 37px;
   text-align: justify;
 }
 .about-us-content .right .buttons {
@@ -638,8 +576,6 @@ h3.home-title:before {
   gap: 20px;
 }
 .about-us-content img {
-  width: 550px;
-  height: 730px;
   border-radius: 38px;
 }
 .govahiname {
@@ -654,10 +590,7 @@ h3.home-title:before {
   height: 200px;
   width: 100%;
 }
-.govahiname .each-govahiname,
-.maghalat .each-govahiname {
-  height: 465px;
-  background: #d9d9d9;
+.govahiname .each-govahiname {
   border-radius: 38px;
   overflow: hidden;
 }
@@ -675,36 +608,16 @@ h3.home-title:before {
   align-content: center;
 }
 
-.maghalat .each-maghale {
-  width: auto;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: self-start;
-}
 .maghalat .each-maghale img {
   border-top: solid 16px var(--orange-500);
-  margin-bottom: 20px;
 }
 .each-maghale h3,
 .each-akhbar h3 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  margin-bottom: 10px;
-  height: 50px;
   text-align: right;
 }
 .maghalat p,
 .akhbar p {
   text-align: right;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 50px;
@@ -714,15 +627,9 @@ h3.home-title:before {
   align-self: flex-end;
 }
 .akhbar .each-akhbar {
-  width: auto;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: self-start;
+  height: 400px;
 }
 .each-akhbar img {
-  height: 450px;
   margin-bottom: 20px;
 }
 
@@ -750,14 +657,12 @@ footer .footer-nav {
 }
 footer h3 {
   color: var(--orange-600);
-  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 37px;
 }
 footer a {
   color: #fff;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -793,16 +698,7 @@ footer a:hover {
 ///////////////////////////////
 ///////////////////////////////
 ///////////////////////////////*/
-@media only screen and (max-width: 400px) {
-  .hero .hero-info p {
-    font-size: 14px;
-  }
-  .hero .hero-info p span {
-    font-size: 12px;
-  }
-}
-/* Mobile and Tablet Devices */
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 315px) {
   .container-content {
     width: 100%;
   }
@@ -821,15 +717,9 @@ footer a:hover {
   .logo {
     width: 100px;
   }
-
-  .top-menu > a {
-    padding: 3px 5px;
-    font-size: 10px;
-  }
-
   .hero h1 {
-    font-size: 30px;
-    right: 30px;
+    font-size: 24px;
+    right: 20px;
   }
   .hero h1 > span {
     font-size: 20px;
@@ -837,30 +727,26 @@ footer a:hover {
   }
   .hero .hero-info {
     width: 95%;
-    padding: 20px;
+    padding: 10px;
     gap: 5px;
   }
   .hero .hero-info p {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 20px;
   }
   .hero .hero-info p span {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 20px;
   }
   section {
-    padding: 20px 0;
+    padding: 15px 0;
   }
   .container-content {
     width: 90%;
     margin: 0 auto;
   }
   h3.home-title {
-    font-size: 22px;
+    font-size: 20px;
     padding: 0 90px 30px 0;
     right: -25px;
   }
@@ -873,22 +759,22 @@ footer a:hover {
     font-size: 14px;
   }
   .kasbokar-rect {
-    height: 34px;
+    height: 24px;
   }
   .kasbokar-circle {
-    width: 100px;
-    margin-top: -50px;
+    width: 80px;
+    margin-top: -40px;
   }
   .kasbokar-circle .circle {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
   }
   .kasbokar-circle span {
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 14px;
   }
   .partner-brands h2 {
     font-size: 24px;
@@ -903,10 +789,11 @@ footer a:hover {
   }
   .group-logos .logo-box {
     padding: 10px;
+    gap: 5px;
   }
   .group-logos .logo-box .each-logo {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
   .comment-box .ceo-comment h3 {
     font-size: 16px;
@@ -918,7 +805,7 @@ footer a:hover {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 18px;
   }
 
   .about-us-content .right p {
@@ -926,7 +813,7 @@ footer a:hover {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 22px;
   }
 
   .about-us-content .right .buttons {
@@ -942,20 +829,47 @@ footer a:hover {
     padding-bottom: 50px;
   }
   .govahiname-bg {
-    height: 100px;
+    height: 50px;
   }
-  .govahiname .each-govahiname,
-  .maghalat .each-govahiname {
-    height: 200px;
+  .govahiname .each-govahiname {
+    height: 120px;
     border-radius: 18px;
+  }
+  .myMaghale .each-maghale {
+    height: 300px;
+    border-radius: 18px;
+  }
+  .myMaghale .each-maghale img {
+    height: 50%;
   }
   .akhbar .each-akhbar {
     height: 450px;
   }
+  .each-maghale h3,
+  .each-akhbar h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    height: 16px;
+  }
   .maghalat p,
   .akhbar p {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 16px;
+    /* height: 30%; */
+  }
+  .each-maghale a,
+  .each-akhbar a {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .btn-white {
+    padding: 5px;
+  }
+  .akhbar .each-akhbar {
+    height: 300px;
+  }
+  .each-akhbar img {
+    height: 50%;
   }
   footer .footer-menu {
     flex-direction: column;
@@ -972,84 +886,325 @@ footer a:hover {
     line-height: 22px;
   }
 }
-/* /////////////////////////
-////////////////////////////
-/////////////////////////// */
-@media only screen and (min-width: 720px) and (max-width: 1080px) {
-  .top-header {
-    padding: 5px 10px;
-  }
-  .logo {
-    width: 100px;
-  }
+/* Big Mobile and Tablet Devices */
+@media only screen and (min-width: 600px) {
   .top-menu .btn-orange {
     font-size: 12px;
-    padding: 3px 5px;
+    padding: 10px;
   }
   .top-header .bio-language a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .hero h1 {
-    right: 50px;
-    bottom: 50%;
+    font-size: 36px;
+  }
+  .hero h1 > span {
+    font-size: 28px;
+    margin-top: 30px;
   }
   .hero .hero-info {
-    width: 90%;
-    padding: 15px 20px;
+    width: 95%;
+    padding: 15px;
+    gap: 15px;
   }
   .hero .hero-info p {
     font-size: 24px;
-    line-height: 25px;
+    line-height: 44px;
+  }
+  .hero .hero-info p span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h3.home-title {
+    font-size: 24px;
+  }
+  .kasbokar-rect {
+    height: 34px;
+  }
+  .kasbokar-circle {
+    width: 80px;
+    margin-top: -50px;
+  }
+  .kasbokar-circle .circle {
+    width: 60px;
+    height: 60px;
+  }
+  .kasbokar-circle span {
+    font-size: 12px;
+  }
+  .partner-brands h2 {
+    font-size: 28px;
+  }
+  .group-logos .logo-box {
+    padding: 10px;
+    gap: 5px;
+  }
+  .group-logos .logo-box .each-logo {
+    width: 45px;
+    height: 45px;
+  }
+  .comment-box img.ceo-comment-logo {
+    width: 80px;
+    height: 80px;
+  }
+  .comment-box .ceo-comment h3 {
+    font-size: 20px;
+  }
+  .comment-box .ceo-comment p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-us-content .right p {
+    font-size: 21px;
+  }
+
+  .govahiname-bg {
+    height: 100px;
+  }
+  .govahiname .each-govahiname {
+    height: 200px;
+    border-radius: 18px;
+  }
+  .myMaghale .each-maghale {
+    height: 350px;
+  }
+  .myMaghale .each-maghale img {
+    margin-bottom: 10px;
+    height: 40%;
+  }
+
+  .each-maghale h3,
+  .each-akhbar h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .maghalat p,
+  .akhbar p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .akhbar .each-akhbar {
+    height: 350px;
+  }
+  .each-akhbar img {
+    height: 40%;
+    margin-bottom: 10px;
+  }
+}
+/* /////////////////////////
+////////////////////////////
+/////////////////////////// */
+@media only screen and (min-width: 768px) {
+  .top-header {
+    background: var(--gradient-glassmorphic-orange);
+  }
+  .top-menu {
+    display: flex;
+  }
+  .top-header .bio-language {
+    display: flex;
+  }
+  .mobile-menu-icon {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h1 > span {
+    font-size: 32px;
+  }
+  .hero .hero-info p {
+    font-size: 32px;
+    line-height: 50px;
   }
   .hero .hero-info p span {
     font-size: 20px;
   }
+  h3.home-title {
+    font-size: 30px;
+    right: -68px;
+  }
   .kasbokar-rect {
     height: 50px;
   }
-
   .kasbokar-circle {
-    margin-top: -77px;
+    width: 100px;
+    margin-top: -66px;
   }
   .kasbokar-circle .circle {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .kasbokar-circle span {
     font-size: 16px;
   }
-  .partner-brands h2 {
-    font-size: 30px;
-  }
-  .comment-box img.ceo-comment-logo {
-    width: 90px;
-    height: 90px;
-  }
-  .comment-box .ceo-comment h3 {
-    font-size: 24px;
-  }
-  .comment-box .ceo-comment p {
-    font-size: 20px;
+  .group-logos .logo-box .each-logo {
+    width: 55px;
+    height: 55px;
   }
   .about-us-content {
-    gap: 20px;
+    gap: 30px;
   }
-  .about-us-content .right p {
-    text-align: justify;
+
+  .about-us-content img {
+    height: 500px;
+    display: block;
+  }
+  .govahiname .each-govahiname {
+    height: 280px;
+  }
+  .each-maghale a,
+  .each-akhbar a {
+    font-size: 18px;
+  }
+}
+/*/////////////////////// .
+.////////////////////////
+. //////////////////////*/
+@media only screen and (min-width: 1080px) {
+  .container-content {
+    width: 90%;
+  }
+  .top-menu .btn-orange {
     font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 10px 15px;
+  }
+  .top-header .bio-language a {
+    font-size: 20px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    right: 98px;
+  }
+  .hero h1 > span {
+    font-size: 32px;
+  }
+  .hero .hero-info {
+    padding: 20px 61px;
+  }
+  .hero .hero-info p {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+  }
+  .hero .hero-info p span {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  h3.home-title {
+    font-size: 30px;
+    padding-bottom: 54px;
+    right: -68px;
+  }
+  .kasbokar-rect {
+    height: 70px;
+  }
+  .kasbokar-circle {
+    width: 140px;
+    margin-top: -98px;
+  }
+  .kasbokar-circle .circle {
+    width: 120px;
+    height: 120px;
+  }
+  .kasbokar-circle span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .group-logos .logo-box .each-logo {
+    width: 110px;
+    height: 110px;
+  }
+  .partner-brands h2 {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: -0.35px;
+    padding-bottom: 30px;
+  }
+  .comment-box {
+    padding: 40px;
+  }
+
+  .comment-box img.ceo-comment-logo {
+    width: 120px;
+    height: 120px;
+  }
+  .comment-box .ceo-comment h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+  }
+  .comment-box .ceo-comment p {
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+  }
+  .about-us-content {
+    gap: 30px;
+  }
+
+  .about-us-content .right p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 30px;
   }
   .about-us-content img {
-    /* display: none; */
-    width: 250px;
-    height: 430px;
-    border-radius: 38px;
+    height: 650px;
+    display: block;
   }
-  .govahiname-bg {
-    height: 100px;
-  }
-  .govahiname .each-govahiname,
-  .maghalat .each-govahiname {
+  .govahiname .each-govahiname {
     height: 350px;
+  }
+  .maghalat .each-maghale img {
+    margin-bottom: 20px;
+  }
+  .each-maghale h3,
+  .each-akhbar h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .maghalat p,
+  .akhbar p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .each-maghale a,
+  .each-akhbar a {
+    font-size: 20px;
+  }
+  .akhbar .each-akhbar {
+    height: 500px;
+  }
+  .each-akhbar img {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  footer h3 {
+    font-size: 24px;
+  }
+  footer a {
+    font-size: 16px;
   }
 }
