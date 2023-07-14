@@ -640,12 +640,11 @@ h3.home-title:before {
 
 footer {
   background: var(--black-500);
-  padding: 40px 0;
+  padding: 40px 0 10px 0;
 }
 
 .footer-menu {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   gap: 20px;
 }
@@ -896,6 +895,10 @@ footer .copy-right p {
   .each-akhbar img {
     height: 50%;
   }
+  .footer-menu {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 /* Big Mobile and Tablet Devices */
 @media only screen and (min-width: 600px) {
@@ -1003,6 +1006,9 @@ footer .copy-right p {
   .each-akhbar img {
     height: 40%;
     margin-bottom: 10px;
+  }
+  .footer-menu {
+    flex-direction: row;
   }
 }
 /* /////////////////////////
@@ -1211,11 +1217,5 @@ footer .copy-right p {
   .each-akhbar img {
     height: 300px;
     margin-bottom: 20px;
-  }
-  footer h3 {
-    font-size: 24px;
-  }
-  footer a {
-    font-size: 16px;
   }
 }
